@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Kontakt do Jarga Fizjoterapia. Umów wizytę, napisz e-mail lub zadzwoń."
+    />
+    <title>Kontakt — Jarga Fizjoterapia</title>
+    <link rel="icon" href="assets/logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EWJ667VKPN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);} 
+      gtag('js', new Date());
+      gtag('config', 'G-EWJ667VKPN');
+    </script>
+  </head>
+  <body>
+    <div class="top-info">
+      <div class="container">
+        <div>
+          ☎️ <a href="tel:+48664465302">664 465 302</a> ·
+          <a
+            class="map-link"
+            href="https://www.google.com/maps/dir/?api=1&destination=Aleja+Zdobywc%C3%B3w+Wa%C5%82u+Pomorskiego+2%2F1"
+            target="_blank"
+            rel="noopener"
+            data-google="https://www.google.com/maps/dir/?api=1&destination=Aleja+Zdobywc%C3%B3w+Wa%C5%82u+Pomorskiego+2%2F1"
+            data-apple="https://maps.apple.com/?daddr=Aleja+Zdobywc%C3%B3w+Wa%C5%82u+Pomorskiego+2%2F1"
+            >Aleja Zdobywców Wału Pomorskiego 2/1</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <header class="hero">
+      <nav class="topbar container">
+        <a class="brand" href="index.html">
+          <img src="assets/logo.png" alt="Jarga Fizjoterapia logo" class="logo" />
+        </a>
+        <div class="nav-links">
+          <a href="o-mnie.html">O mnie</a>
+          <a href="oferta.html">Oferta</a>
+          <a href="cennik.html">Cennik</a>
+          <a href="index.html#kwalifikacje">Kwalifikacje</a>
+          <a href="index.html#opinie">Opinie</a>
+          <a href="kontakt.html">Kontakt</a>
+        </div>
+      </nav>
+
+      <div class="hero-content" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">Kontakt</p>
+          <h1>Skontaktuj się z Jarga Fizjoterapia</h1>
+          <p class="lead">
+            Zadzwoń, napisz e-mail lub odwiedź nas w gabinecie — chętnie umówimy
+            wizytę i pomożemy wybrać najlepszą terapię.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section about">
+        <div class="section-heading">
+          <p class="eyebrow">Dane kontaktowe</p>
+          <h2>Zapraszamy do kontaktu</h2>
+        </div>
+        <div class="card-grid contact-grid">
+          <article class="card">
+            <h3>Telefon</h3>
+            <p><a href="tel:+48664465302">664 465 302</a></p>
+            <p>Skontaktuj się z nami, aby umówić dogodny termin wizyty.</p>
+          </article>
+          <article class="card">
+            <h3>E-mail</h3>
+            <p><a href="mailto:jarga.fizjoterapia@op.pl?subject=Zapytanie%20o%20wizyt%C4%99&body=Dzie%C5%84%20dobry%2C%0A%0AChcia%C5%82bym%20um%C3%B3wi%C4%87%20wizyt%C4%99%20w%20terminie%3A%20%5Bproponowany%20termin%5D.%20Prosz%C4%99%20o%20kontakt.%0A%0AZ%20powa%C5%BCaniem%2C">jarga.fizjoterapia@op.pl</a></p>
+          </article>
+          <article class="card">
+            <h3>Adres</h3>
+            <p>Aleja Zdobywców Wału Pomorskiego 2/1</p>
+            <p>Wałcz</p>
+          </article>
+          <article class="card">
+            <h3>Godziny otwarcia</h3>
+            <p>Poniedziałek – Piątek: 8:00 – 18:00</p>
+            <p>Sobota: 8:00 – 14:00</p>
+            <p>Niedziela: nieczynne</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <div>
+        <h2>Kontakt</h2>
+        <p>☎️ <a href="tel:+48664465302">664 465 302</a></p>
+        <p><a href="polityka-prywatnosci.html">Polityka prywatności</a></p>
+      </div>
+      <div>
+        <p>Jarga Fizjoterapia</p>
+        <p>© <span id="year-kontakt"></span> Wszelkie prawa zastrzeżone.</p>
+        <p><a href="polityka-prywatnosci.html">Polityka prywatności</a></p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year-kontakt').textContent = new Date().getFullYear();
+    </script>
+    <script src="map-link.js"></script>
+    <script src="analytics.js"></script>
+  </body>
+</html>
