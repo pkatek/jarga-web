@@ -32,10 +32,15 @@ body {
 }
 
 .top-info {
+.top-info {
   background: #f7f1f6;
   border-bottom: 1px solid var(--border);
   color: var(--muted);
   font-size: 0.95rem;
+  position: sticky;
+  top: 0;
+  z-index: 1200;
+  box-shadow: 0 6px 18px rgba(36, 36, 36, 0.05);
 }
 
 .top-info .container {
