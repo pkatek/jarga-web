@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <defs>
-    <style>.
-      s{fill:#e40062}
-    </style>
-  </defs>
-  <circle cx="100" cy="60" r="56" fill="#e40062" opacity="0.06"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Jarga Fizjoterapia</title>
+  <desc id="logoDesc">Logo Jarga Fizjoterapia — kolorowe elementy na przezroczystym tle</desc>
   <g transform="translate(20,18) scale(0.8)" fill="#e40062">
-    <circle cx="80" cy="20" r="40" fill="none"/>
     <path d="M80 36c-6-14-18-24-18-24s8 6 12 12c4 6 6 8 6 12z"/>
     <path d="M80 36c6-14 18-24 18-24s-8 6-12 12c-4 6-6 8-6 12z"/>
     <path d="M80 80c-14 0-24-10-24-22v-8h48v8c0 12-10 22-24 22z"/>

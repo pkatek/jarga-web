@@ -237,6 +237,20 @@ h1 {
   margin-bottom: 32px;
 }
 
+.back-link {
+  margin-bottom: 18px;
+}
+
+.back-link a {
+  display: inline-block;
+  padding: 8px 12px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  font-weight: 700;
+}
+
 .section-heading h2 {
   font-size: clamp(1.7rem, 3vw, 2.4rem);
   margin: 0;
