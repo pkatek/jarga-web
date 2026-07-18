@@ -32,7 +32,6 @@ body {
 }
 
 .top-info {
-.top-info {
   background: #f7f1f6;
   border-bottom: 1px solid var(--border);
   color: var(--muted);
@@ -142,7 +141,7 @@ h1 {
 
 .lead {
   font-size: 1.05rem;
-  color: rgba(255, 255, 255, 0.88);
+  color: rgba(36, 36, 36, 0.85);
   max-width: 640px;
 }
 
