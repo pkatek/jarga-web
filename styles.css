@@ -403,3 +403,21 @@ h1 {
     width: 100%;
   }
 }
+
+/* Mobile: make top-info stack into two lines for narrow screens (phones) */
+@media (max-width: 420px) {
+  .top-info .container {
+    flex-direction: column;
+    gap: 6px;
+    padding: 8px 12px;
+  }
+
+  .top-info .container > div {
+    text-align: center;
+    white-space: normal;
+  }
+
+  .top-info a {
+    margin-left: 0;
+  }
+}
