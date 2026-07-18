@@ -92,7 +92,16 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--accent);
+}
+
+.nav-links a {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
 }
 
 .hero-content {
