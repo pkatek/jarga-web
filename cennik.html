@@ -39,7 +39,7 @@
           <a href="kontakt.html">Kontakt</a>
         </div>
       </nav>
-      <div class="hero-content">
+      <div class="hero-content single-column">
         <div class="hero-copy">
           <p class="eyebrow">Cennik</p>
           <h1>Cennik usług Jarga Fizjoterapia</h1>
@@ -48,14 +48,15 @@
       </div>
     </header>
 
-    <main>
-      <section class="section">
+    <main class="section container">
+      <section>
         <div class="section-heading">
           <p class="eyebrow">Cennik</p>
           <h2>Aktualne ceny usług terapeutycznych</h2>
         </div>
-        <div class="price-actions">
-          <input id="price-search" class="price-search" type="search" placeholder="Szukaj usługi, np. masaż, wkładki, Hi-Top..." />
+        <div class="price-actions card">
+          <input id="price-search" class="price-search" type="search" aria-label="Wyszukaj usługę" placeholder="Szukaj usługi, np. masaż, wkładki, Hi-Top..." />
+          <p class="price-note">Wpisz nazwę usługi lub kategorię, aby szybko znaleźć cenę. Jeśli chcesz, zadzwoń i umów wizytę bezpośrednio.</p>
         </div>
 
         <div class="price-table" id="price-table">
