@@ -38,7 +38,6 @@ body {
   font-size: 0.95rem;
   position: sticky;
   top: 0;
-  z-index: 1200;
   box-shadow: 0 6px 18px rgba(36, 36, 36, 0.05);
 }
 
