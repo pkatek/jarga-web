@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cennik A4 — Jarga Fizjoterapia</title>
+    <style>
+      :root { --pink: #e40062; --soft: #fff1f6; --ink: #252127; --muted: #6f6870; --line: #eedce4; }
+      * { box-sizing: border-box; }
+      @page { size: A4; margin: 0; }
+      body { margin: 0; background: #ece8ea; color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
+      .sheet { display: flex; flex-direction: column; width: 210mm; height: 297mm; margin: 0 auto; padding: 11mm 12mm 9mm; background: #fff; }
+      header { display: grid; grid-template-columns: 29mm 1fr; gap: 6mm; align-items: center; padding-bottom: 5mm; border-bottom: 1px solid var(--line); }
+      .logo { width: 27mm; height: 27mm; object-fit: contain; }
+      .brand { color: var(--pink); font-size: 10pt; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+      h1 { margin: 1.5mm 0 0; font-size: 29pt; line-height: 1; letter-spacing: -.04em; }
+      main { display: grid; grid-template-columns: 1.18fr .82fr; gap: 6mm; padding-top: 6mm; }
+      .column { display: grid; align-content: start; gap: 5mm; }
+      .section-title { display: flex; align-items: center; gap: 2.5mm; margin: 0 0 2.5mm; color: var(--pink); font-size: 11pt; text-transform: uppercase; letter-spacing: .08em; }
+      .section-title::after { content: ""; height: 1px; flex: 1; background: var(--line); }
+      .items { display: grid; gap: 1.7mm; }
+      .item { display: grid; grid-template-columns: 1fr auto; gap: 2.5mm; align-items: start; padding: 2.2mm 2.6mm; border: 1px solid var(--line); border-radius: 3mm; break-inside: avoid; }
+      .item h2 { margin: 0; font-size: 9.2pt; line-height: 1.22; }
+      .item p { margin: .8mm 0 0; color: var(--muted); font-size: 7.3pt; line-height: 1.3; }
+      .price { color: var(--pink); font-size: 11pt; font-weight: 800; white-space: nowrap; }
+      .package { display: inline-block; margin-top: 1.2mm; padding: 1mm 2mm; border-radius: 99px; background: var(--soft); color: var(--pink); font-size: 7.2pt; font-weight: 700; }
+      .note { margin: 2mm 0 0; color: var(--muted); font-size: 6.8pt; }
+      footer { display: grid; grid-template-columns: 1fr auto; gap: 5mm; align-items: center; margin-top: auto; padding: 4mm 5mm; border-radius: 4mm; background: var(--pink); color: #fff; }
+      footer strong { display: block; margin-bottom: 1mm; font-size: 11pt; }
+      footer p { margin: 0; font-size: 8.4pt; line-height: 1.45; }
+      footer .phone { font-size: 15pt; font-weight: 800; white-space: nowrap; }
+      @media print { body { background: #fff; } .sheet { margin: 0; } }
+    </style>
+  </head>
+  <body>
+    <div class="sheet">
+      <header>
+        <img class="logo" src="assets/logo.png" alt="Jarga Fizjoterapia" />
+        <div><div class="brand">Jarga Fizjoterapia</div><h1>Cennik usług</h1></div>
+      </header>
+
+      <main>
+        <div class="column">
+          <section>
+            <h2 class="section-title">Terapia lecznicza</h2>
+            <div class="items">
+              <div class="item"><div><h2>Wizyta diagnostyczna</h2><p>do 45 minut</p></div><div class="price">100 zł</div></div>
+              <div class="item"><div><h2>Wizyta fizjoterapeutyczna</h2><p>do 50 minut</p></div><div class="price">180 zł</div></div>
+              <div class="item"><div><h2>Terapia na wdowi garb</h2><p>do 45 minut</p></div><div class="price">170 zł</div></div>
+              <div class="item"><div><h2>Mechaniczny drenaż limfatyczny</h2><p>1 zabieg</p><span class="package">Pakiet 10 zabiegów — 450 zł</span></div><div class="price">50 zł</div></div>
+              <div class="item"><div><h2>Hi‑Top</h2><p>1 zabieg</p><span class="package">Pakiet 10 zabiegów — 640 zł</span></div><div class="price">70 zł</div></div>
+              <div class="item"><div><h2>Terapia radiofalowa</h2><p>1 zabieg</p><span class="package">Pakiet 10 zabiegów — 640 zł</span></div><div class="price">70 zł</div></div>
+              <div class="item"><div><h2>Krioterapia miejscowa</h2><p>5 zabiegów</p><span class="package">Pakiet 10 zabiegów — 190 zł</span><p class="note">* płatne z góry</p></div><div class="price">100 zł</div></div>
+              <div class="item"><div><h2>Indywidualne wkładki ortopedyczne</h2><p>Ocena statyczna i dynamiczna ustawienia stóp, badanie na podoskopie, para wkładek i wizyta kontrolna</p></div><div class="price">500 zł</div></div>
+            </div>
+          </section>
+        </div>
+
+        <div class="column">
+          <section>
+            <h2 class="section-title">Estetyka i modelowanie</h2>
+            <div class="items">
+              <div class="item"><div><h2>Fizjoterapia estetyczna — PhysioKOBIDO</h2><p>do 90 minut</p></div><div class="price">300 zł</div></div>
+              <div class="item"><div><h2>Fizjoterapia estetyczna — Bodyshaping</h2><p>uda + pośladki, do 60 minut</p><span class="package">Pakiet 7 zabiegów — 1300 zł</span></div><div class="price">200 zł</div></div>
+              <div class="item"><div><h2>Fizjoterapia estetyczna — Bodyshaping</h2><p>nogi + brzuch, do 90 minut</p><span class="package">Pakiet 7 zabiegów — 1600 zł</span></div><div class="price">270 zł</div></div>
+            </div>
+          </section>
+
+          <section>
+            <h2 class="section-title">Masaż</h2>
+            <div class="items">
+              <div class="item"><div><h2>Masaż klasyczny</h2><p>do 60 minut</p></div><div class="price">160 zł</div></div>
+              <div class="item"><div><h2>Masaż klasyczny</h2><p>do 90 minut</p></div><div class="price">190 zł</div></div>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <footer>
+        <div><strong>Umów wizytę</strong><p>Aleja Zdobywców Wału Pomorskiego 2/1, Wałcz<br />jarga.fizjoterapia@op.pl</p></div>
+        <div class="phone">664 465 302</div>
+      </footer>
+    </div>
+  </body>
+</html>
