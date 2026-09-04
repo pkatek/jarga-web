@@ -559,6 +559,23 @@ h1 {
   background: var(--accent-soft);
 }
 
+.service-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  margin-bottom: 20px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+}
+
+.service-placeholder img {
+  width: clamp(90px, 38%, 140px);
+  height: auto;
+}
+
 .service-showcase {
   display: grid;
   grid-template-columns: minmax(240px, 360px) 1fr;
